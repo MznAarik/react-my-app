@@ -1,0 +1,320 @@
+{
+    "top_netflix_series": [
+      {
+        "name": "Stranger Things",
+        "rating": 8.7,
+        "description": "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
+        "image_url": "https://example.com/stranger_things.jpg",
+        "cast": [
+          "Winona Ryder",
+          "David Harbour",
+          "Millie Bobby Brown",
+          "Finn Wolfhard",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Noah Schnapp"
+        ],
+        "genre": ["Drama", "Fantasy", "Horror"],
+        "watch_url": "https://www.netflix.com/title/80057281"
+      },
+      {
+        "name": "The Queen's Gambit",
+        "rating": 8.6,
+        "description": "Orphaned at a young age, Beth Harmon discovers an astonishing talent for chess while struggling with addiction. As she rises to the top of the chess world, she battles personal demons and societal expectations.",
+        "image_url": "https://example.com/queens_gambit.jpg",
+        "cast": [
+          "Anya Taylor-Joy",
+          "Bill Camp",
+          "Moses Ingram",
+          "Harry Melling",
+          "Thomas Brodie-Sangster"
+        ],
+        "genre": ["Drama", "Period Piece"],
+        "watch_url": "https://www.netflix.com/title/80234304"
+      },
+      {
+        "name": "Bridgerton",
+        "rating": 7.4,
+        "description": "In Regency London, wealthy families present their daughters at court. The scandalous life of the powerful Bridgerton family is revealed through the eyes of the witty and mysterious Lady Whistledown.",
+        "image_url": "https://example.com/bridgerton.jpg",
+        "cast": [
+          "Adjoa Andoh",
+          "Lorraine Ashbourne",
+          "Jonathan Bailey",
+          "Simone Ashley",
+          "Phoebe Dynevor",
+          "Regé-Jean Page"
+        ],
+        "genre": ["Drama", "Romance", "Period Piece"],
+        "watch_url": "https://www.netflix.com/title/80232058"
+      },
+      {
+        "name": "Squid Game",
+        "rating": 8.0,
+        "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+        "image_url": "https://example.com/squid_game.jpg",
+        "cast": [
+          "Lee Jung-jae",
+          "Park Hae-soo",
+          "Wi Ha-joon",
+          "Jung Ho-yeon",
+          "O Yeong-su"
+        ],
+        "genre": ["Action", "Thriller", "Drama"],
+        "watch_url": "https://www.netflix.com/title/81040344"
+      },
+      {
+        "name": "The Witcher",
+        "rating": 8.1,
+        "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+        "image_url": "https://example.com/the_witcher.jpg",
+        "cast": [
+          "Henry Cavill",
+          "Anya Chalotra",
+          "Freya Allan",
+          "Joey Batey",
+          "Anna Shaffer"
+        ],
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "watch_url": "https://www.netflix.com/title/80189685"
+      },
+      {
+        "name": "Ozark",
+        "rating": 8.5,
+        "description": "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder money to appease a drug boss.",
+        "image_url": "https://example.com/ozark.jpg",
+        "cast": [
+          "Jason Bateman",
+          "Laura Linney",
+          "Julia Garner",
+          "Sofia Hublitz",
+          "Skylar Gaertner"
+        ],
+        "genre": ["Crime", "Drama", "Thriller"],
+        "watch_url": "https://www.netflix.com/title/80117550"
+      },
+      {
+        "name": "The Crown",
+        "rating": 8.6,
+        "description": "This drama follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
+        "image_url": "https://example.com/the_crown.jpg",
+        "cast": [
+          "Claire Foy",
+          "Olivia Colman",
+          "Imelda Staunton",
+          "Matt Smith",
+          "Tobias Menzies",
+          "Helena Bonham Carter"
+        ],
+        "genre": ["Drama", "History"],
+        "watch_url": "https://www.netflix.com/title/80025678"
+      },
+      {
+        "name": "Black Mirror",
+        "rating": 8.8,
+        "description": "This anthology series taps into our collective unease with the modern world. Each stand-alone episode is a sharp, suspenseful tale exploring themes of contemporary techno-paranoia.",
+        "image_url": "https://example.com/black_mirror.jpg",
+        "cast": [
+          "Varies by episode"
+        ],
+        "genre": ["Drama", "Sci-Fi", "Thriller"],
+        "watch_url": "https://www.netflix.com/title/70264888"
+      },
+      {
+        "name": "You",
+        "rating": 7.7,
+        "description": "A charming bookstore manager with a sinister side uses social media and the internet to become close to his objects of affection.",
+        "image_url": "https://example.com/you.jpg",
+        "cast": [
+          "Penn Badgley",
+          "Elizabeth Lail",
+          "Victoria Pedretti",
+          "Tati Gabrielle",
+          "Jenna Ortega"
+        ],
+        "genre": ["Crime", "Drama", "Romance"],
+        "watch_url": "https://www.netflix.com/title/80211991"
+      },
+      {
+        "name": "Money Heist (La Casa de Papel)",
+        "rating": 8.2,
+        "description": "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history — to print billions of euros in the Royal Mint of Spain.",
+        "image_url": "https://example.com/money_heist.jpg",
+        "cast": [
+          "Úrsula Corberó",
+          "Álvaro Morte",
+          "Itziar Ituño",
+          "Pedro Alonso",
+          "Alba Flores"
+        ],
+        "genre": ["Action", "Crime", "Mystery"],
+        "watch_url": "https://www.netflix.com/title/80192098"
+      },
+      {
+        "name": "Sex Education",
+        "rating": 8.4,
+        "description": "Inexperienced Otis channels his sex therapist mom to help fellow students navigate tricky situations. A British comedy-drama series.",
+        "image_url": "https://example.com/sex_education.jpg",
+        "cast": [
+          "Asa Butterfield",
+          "Gillian Anderson",
+          "Emma Mackey",
+          "Ncuti Gatwa",
+          "Aimee Lou Wood"
+        ],
+        "genre": ["Comedy", "Drama"],
+        "watch_url": "https://www.netflix.com/title/80197825"
+      },
+      {
+        "name": "Narcos",
+        "rating": 8.4,
+        "description": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+        "image_url": "https://example.com/narcos.jpg",
+        "cast": [
+          "Wagner Moura",
+          "Boyd Holbrook",
+          "Pedro Pascal",
+          "Joanna Christie",
+          "Maurice Compte"
+        ],
+        "genre": ["Crime", "Drama"],
+        "watch_url": "https://www.netflix.com/title/80025172"
+      },
+      {
+        "name": "The Umbrella Academy",
+        "rating": 7.9,
+        "description": "Reunited by their father's death, estranged siblings with extraordinary powers uncover shocking family secrets — and a looming threat to humanity.",
+        "image_url": "https://example.com/umbrella_academy.jpg",
+        "cast": [
+          "Elliot Page",
+          "Tom Hopper",
+          "David Castañeda",
+          "Emmy Raver-Lampman",
+          "Robert Sheehan"
+        ],
+        "genre": ["Action", "Adventure", "Comedy"],
+        "watch_url": "https://www.netflix.com/title/80186863"
+      },
+      {
+        "name": "Emily in Paris",
+        "rating": 6.9,
+        "description": "When ambitious marketing executive Emily Cooper lands her dream job in Paris, she embraces a new life of adventure and challenges.",
+        "image_url": "https://example.com/emily_in_paris.jpg",
+        "cast": [
+          "Lily Collins",
+          "Philippine Leroy-Beaulieu",
+          "Ashley Park",
+          "Lucas Bravo",
+          "Samuel Arnold"
+        ],
+        "genre": ["Comedy", "Drama", "Romance"],
+        "watch_url": "https://www.netflix.com/title/81038214"
+      },
+      {
+        "name": "Virgin River",
+        "rating": 7.4,
+        "description": "Seeking a fresh start, a nurse practitioner moves from Los Angeles to a remote Northern California town and is surprised by what — and who — she finds.",
+        "image_url": "https://example.com/virgin_river.jpg",
+        "cast": [
+          "Alexandra Breckenridge",
+          "Martin Henderson",
+          "Tim Matheson",
+          "Annette O'Toole",
+          "Lauren Hammersley"
+        ],
+        "genre": ["Drama", "Romance"],
+        "watch_url": "https://www.netflix.com/title/80240837"
+      },
+      {
+        "name": "Lupin",
+        "rating": 7.5,
+        "description": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+        "image_url": "https://example.com/lupin.jpg",
+        "cast": [
+          "Omar Sy",
+          "Hervé Pierre",
+          "Nicole Garcia",
+          "Clotilde Hesme",
+          "Ludivine Sagnier"
+        ],
+        "genre": ["Crime", "Drama", "Mystery"],
+        "watch_url": "https://www.netflix.com/title/80994082"
+      },
+      {
+        "name": "Sweet Magnolias",
+        "rating": 7.4,
+        "description": "Lifelong friends Maddie, Helen and Dana Sue lift each other up as they juggle relationships, family, and careers in the small Southern town of Serenity.",
+        "image_url": "https://example.com/sweet_magnolias.jpg",
+        "cast": [
+          "JoAnna Garcia Swisher",
+          "Brooke Elliott",
+          "Heather Headley",
+          "Chris Klein",
+          "Jamie Lynn Spears"
+        ],
+        "genre": ["Drama", "Romance"],
+        "watch_url": "https://www.netflix.com/title/81002283"
+      },
+      {
+        "name": "Outer Banks",
+        "rating": 7.6,
+        "description": "A teenager from the wrong side of the tracks enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance.",
+        "image_url": "https://example.com/outer_banks.jpg",
+        "cast": [
+          "Chase Stokes",
+          "Madelyn Cline",
+          "Madison Bailey",
+          "Jonathan Daviss",
+          "Rudy Pankow"
+        ],
+        "genre": ["Action", "Crime", "Drama"],
+        "watch_url": "https://www.netflix.com/title/80236316"
+      },
+      {
+        "name": "Maid",
+        "rating": 8.0,
+        "description": "A young mother escapes an abusive relationship, taking a job as a maid to provide a better future for her daughter.",
+        "image_url": "https://example.com/maid.jpg",
+        "cast": [
+          "Margaret Qualley",
+          "Nick Robinson",
+          "Anika Noni Rose",
+          "Tracy Vilar",
+          "Billy Burke"
+        ],
+        "genre": ["Drama"],
+        "watch_url": "https://www.netflix.com/title/81147856"
+      },
+      {
+        "name": "Unorthodox",
+        "rating": 7.9,
+        "description": "A young woman raised in a strict Orthodox Jewish community in Williamsburg, Brooklyn, flees to Berlin to start a new life.",
+        "image_url": "https://example.com/unorthodox.jpg",
+        "cast": [
+          "Shira Haas",
+          "Jeff Wilbusch",
+          "Amit Rahav",
+          "Yael Adler",
+          "Gera Sandler"
+        ],
+        "genre": ["Drama"],
+        "watch_url": "https://www.netflix.com/title/81005068"
+      },
+      {
+        "name": "The Haunting of Hill House",
+        "rating": 8.2,
+        "description": "Flashing between past and present, a fractured family confronts haunting memories of their old home and the terrifying events that drove them from it.",
+        "image_url": "https://example.com/haunting_of_hill_house.jpg",
+        "cast": [
+          "Michiel Huisman",
+          "Carla Gugino",
+          "Henry Thomas",
+          "Elizabeth Reaser",
+          "Oliver Jackson-Cohen",
+          "Victoria Pedretti"
+        ],
+        "genre": ["Drama", "Horror", "Mystery"],
+        "watch_url": "https://www.netflix.com/title/80208243"
+      }
+    ]
+  }
