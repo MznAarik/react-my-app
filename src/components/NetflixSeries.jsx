@@ -1,26 +1,17 @@
-
-const name = "KungFu Hustle 2";
-const rating = 8.2;
-const summary = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, placeat! Suscipit eos, voluptate et ducimus impedit voluptates ipsam veritatis animi cupiditate odio unde ipsa aliquid aliquam quod iure maiores consectetur"
-const returnGenre = () => {
-    const genre = "ROMCOM"
-    return genre;
-};
-const age = 18;
+import seriesData from '../api/seriesData.json';
+import { SeriesCard } from '../components/SeriesCard.jsx'
+// import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 
 const NetflixSeries = () => {
     return (
-        <>
-            <div>
-                <img src="cover.jpg" alt="images" width="30%" />
-            </div>
-            <h2> Name: {name} </h2>
-            <h3>Rating: {rating}</h3>
-            <p>Summary: {summary}</p>
-            <p>Genre: {returnGenre()}</p>
-            <button id="btn">{age >= 18 ? "Watch Now!" : "Not Available"}</button>
-        </>
-    )
+        <ul className="grid grid-three--cols">
+            {
+                seriesData.map((curElem) => (
+                    <SeriesCard key={curElem.id} data={curElem} />
+                ))
+            }
+        </ul >
+    );
 };
 
 export default NetflixSeries;
@@ -37,3 +28,4 @@ export const Footer = () => {
         <p>CopyRight @ 2025</p>
     );
 }
+
