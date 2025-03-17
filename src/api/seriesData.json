@@ -1,13 +1,14 @@
 [
     {
+      
       "id":1,
-      "name": "Unorthodox",
-      "rating": 7.9,
-      "description": "A young woman raised in a strict Orthodox Jewish community in Williamsburg, Brooklyn, flees to Berlin to start a new life.",
-      "image_url": "../public/8.jpg",
-      "cast": ["Shira Haas", "Jeff Wilbusch", "Amit Rahav", "Yael Adler", "Gera Sandler"],
-      "genre": ["Drama"],
-      "watch_url": "https://www.netflix.com/title/81005068"
+      "name": "Better Call Saul",
+      "rating": 8.7,
+      "description": "The trials and tribulations of criminal lawyer Jimmy McGill before he becomes the infamous Saul Goodman.",
+      "image_url": "../8.jpg",
+      "cast": ["Bob Odenkirk", "Jonathan Banks", "Rhea Seehorn", "Patrick Fabian", "Michael Mando"],
+      "genre": ["Crime", "Drama"],
+      "watch_url": "https://www.netflix.com/title/80021955"
     },
     {
       "id":2,
@@ -71,12 +72,12 @@
     },
     {
       "id":8,
-      "name": "Better Call Saul",
-      "rating": 8.7,
-      "description": "The trials and tribulations of criminal lawyer Jimmy McGill before he becomes the infamous Saul Goodman.",
-      "image_url": "../8.jpg",
-      "cast": ["Bob Odenkirk", "Jonathan Banks", "Rhea Seehorn", "Patrick Fabian", "Michael Mando"],
-      "genre": ["Crime", "Drama"],
-      "watch_url": "https://www.netflix.com/title/80021955"
+      "name": "Unorthodox",
+      "rating": 7.9,
+      "description": "A young woman raised in a strict Orthodox Jewish community in Williamsburg, Brooklyn, flees to Berlin to start a new life.",
+      "image_url": "../public/8.jpg",
+      "cast": ["Shira Haas", "Jeff Wilbusch", "Amit Rahav", "Yael Adler", "Gera Sandler"],
+      "genre": ["Drama"],
+      "watch_url": "https://www.netflix.com/title/81005068"
     }
   ]
