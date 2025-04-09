@@ -74,7 +74,7 @@
       "name": "Better Call Saul",
       "rating": 8.7,
       "description": "The trials and tribulations of criminal lawyer Jimmy McGill before he becomes the infamous Saul Goodman.",
-      "image_url": "../8.jpg",
+      "image_url": "8.jpg",
       "cast": ["Bob Odenkirk", "Jonathan Banks", "Rhea Seehorn", "Patrick Fabian", "Michael Mando"],
       "genre": ["Crime", "Drama"],
       "watch_url": "https://www.netflix.com/title/80021955"
