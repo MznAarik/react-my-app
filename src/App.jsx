@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
 import { EventProps } from "./components/EventProps";
+import { EventPropagation } from "./components/EventPropagation";
 
 export default function App() {
   return <MantineProvider>{
@@ -12,7 +13,8 @@ export default function App() {
       <h1 className="card-heading">List of Top Netflix Series</h1>
       {/* <NetflixSeries /> */}
       {/* <EventHandling /> */}
-      <EventProps />
+      {/* <EventProps /> */}
+      <EventPropagation />
     </section>
   }
   </MantineProvider>;
