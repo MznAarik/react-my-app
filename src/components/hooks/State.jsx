@@ -14,6 +14,7 @@ export const State = () => {
 
     const handleBUttonClick = () => {
         setCount(() => count + 1);
+        console.log("Parent Component Rerendered");
     }
 
     return (
@@ -22,7 +23,17 @@ export const State = () => {
                 <h1>{count}</h1>
                 <button onClick={handleBUttonClick}>Increment</button>
             </section>
+            <ChildComponent count={count} />
         </>
     );
 
 };
+
+function ChildComponent({ count }) {
+    console.log("Child Component Rerendered ");
+    return (
+        <div className="child-div">
+            <h2>Child Component {count}</h2>
+        </div>
+    )
+}
