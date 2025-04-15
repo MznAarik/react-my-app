@@ -19,11 +19,11 @@ export const DerivedState = () => {
         <div className="main-div">
             <h1>Users List</h1>
             <ul>
-                {users.map((setUsers, index) => {
+                {users.map((users, index) => {
                     return (
                         <>
                             <li key={index}>
-                                {setUsers.name} - {setUsers.age} years old.
+                                {users.name} - {users.age} years old.
                             </li>
                         </>
                     )
