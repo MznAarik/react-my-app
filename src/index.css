@@ -37,7 +37,7 @@ a:hover {
 
 body, ul{
   margin: 0;
-  list-style: none  ;
+  list-style: none;
   color: #888 !important;
   background-color: #242424 !important;
   
@@ -85,11 +85,9 @@ button:focus-visible {
 
 .container{
   max-width: 142rem;
-  margin:0 auto;
+  margin:0 ;
   padding: 3rem 9rem;
-  h1{
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .grid{
@@ -105,6 +103,6 @@ button:focus-visible {
 
 .grid-three--cols{
   text-align: center;
-  padding: 20px 15px;
+  /* padding: 20px 15px; */
   grid-template-columns: repeat(3, 1fr);
 }
