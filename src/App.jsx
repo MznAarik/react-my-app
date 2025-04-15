@@ -2,6 +2,7 @@ import React from "react";
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { State } from "./components/hooks/State";
+import { DerivedState } from "./components/hooks/DerivedState";
 
 // import NetflixSeries, { Footer, Header } from "./components/NetflixSeries";
 // import { EventHandling } from "./components/EventHandling";
@@ -15,8 +16,9 @@ export default function App() {
       {/* <EventHandling /> */}
       {/* <EventProps /> */}
       {/* <EventPropagation /> */}
-      <State />
-      <Sibling />
+      {/* <State />
+      <Sibling /> */}
+      <DerivedState />
     </section>
   }
   </MantineProvider>;
