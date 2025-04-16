@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { IoIosSwitch } from "react-icons/io";
+import { FaUserSecret } from "react-icons/fa";
 import "./ToggleSwitch.css"
 
 export const ToggleSwitch = () => {
@@ -11,11 +13,14 @@ export const ToggleSwitch = () => {
     const checkToggle = isToggle ? "on" : "off";
     return (
         <>
-            <div className="toggle-switch" style={{ backgroundColor: isToggle ? "rgb(153 9 9)" : "#84d10d" }} onClick={handleToggleSwitch}>
+            <h1>Toggle Switch <IoIosSwitch style={{ color: "red" }} /> <FaUserSecret /></h1>
+            <div className="toggle-switch" style={{
+                backgroundColor: isToggle ? "red" : "#84d10d"
+            }} onClick={handleToggleSwitch}>
                 <div className={`switch ${checkToggle}`}>
                     <span className="switch-state"> {checkIsOn}</span>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
