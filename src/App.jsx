@@ -12,6 +12,7 @@ import { ToDo } from "./components/projects/ToDo/Todo";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
 
+
 export default function App() {
   return <MantineProvider>{
     <section className="container">
