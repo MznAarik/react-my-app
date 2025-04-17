@@ -4,6 +4,8 @@ import { MantineProvider } from '@mantine/core';
 import { State } from "./components/hooks/State";
 import { DerivedState } from "./components/DerivedState";
 import { LiftStateUp } from "./components/LiftStateUp";
+import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
+import { ToDo } from "./components/projects/ToDo/Todo";
 
 // import NetflixSeries, { Footer, Header } from "./components/NetflixSeries";
 // import { EventHandling } from "./components/EventHandling";
@@ -20,7 +22,10 @@ export default function App() {
       {/* <State />
       <Sibling /> */}
       {/* <DerivedState /> */}
-      <LiftStateUp />
+      {/* <LiftStateUp /> */}
+      {/* <ToggleSwitch /> */}
+      <ToDo />
+
     </section>
   }
   </MantineProvider>;

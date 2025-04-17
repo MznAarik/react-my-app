@@ -13,17 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 
 
-  --main-color: #777ccf; 
-  --supporting-color: #ebf3fe; 
-  --heading-color: #000a19; 
-  --h-color: #0a043c; 
-  --font-color: 54 
-  --bg-color: #424242; 
-  --white-color:#ffffff; 
-  --para-color: #504e4d; 
-  --btn-bg-color:#211f1f;
-  --btn-hover-bg-color: #646cff; 
-  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+  --main-color: #777ccf;
+  --supporting-color: #ebf3fe;
+  --heading-color: #000a19;
+  --h-color: #0a043c;
+  --font-color: 54 --bg-color: #424242;
+  --white-color: #ffffff;
+  --para-color: #504e4d;
+  --btn-bg-color: #211f1f;
+  --btn-hover-bg-color: #646cff;
+  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 a {
@@ -31,16 +30,18 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
-body, ul{
+body,
+ul {
   margin: 0;
   list-style: none;
-  color: #888 !important;
-  background-color: #242424 !important;
-  
+  color: #888;
+  background-color: #242424;
+
 }
 
 h1 {
@@ -61,9 +62,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -74,34 +77,37 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
+/* 
 
-.container{
+.container {
   max-width: 142rem;
-  margin:0 ;
+  margin: 0;
   padding: 3rem 9rem;
   text-align: center;
-}
+} */
 
-.grid{
+.grid {
   display: grid;
-  gap:20px;
+  gap: 20px;
   border: 2px solid white;
   border-radius: 15px;
 }
 
-.grid-two-cols{
+.grid-two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-three--cols{
+.grid-three--cols {
   text-align: center;
   /* padding: 20px 15px; */
   grid-template-columns: repeat(3, 1fr);

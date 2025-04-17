@@ -1,0 +1,52 @@
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 125px;
+    height: 64px;
+    border-radius: 34px;
+    background-color: #ccc;
+    border: 2px solid rgb(101, 92, 92);
+
+}
+
+.switch {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+    right: 0;
+    bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50px;
+    max-width: 42%;
+    height: 50px;
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(101, 92, 92);
+}
+
+
+.on {
+    background-color: rgb(171, 182, 154);
+    border-color: 2px solid black;
+    transform: translateX(60px);
+    color: red;
+}
+
+.off {
+    background-color: rgb(171, 182, 154);
+    transform: translateX(0px);
+    color: greenyellow
+}
