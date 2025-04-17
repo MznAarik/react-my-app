@@ -1,0 +1,43 @@
+import { useState } from "react";
+import "./Todo.css";
+
+
+export const ToDo = () => {
+    const [inputValue, setInputValue] = useState("");
+    const [task, setTask] = useState([]);
+
+    const handleInputChange = (value) => {
+        setInputValue(value);
+    }
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+
+        if (!inputValue) return;
+
+        setTask((prev) => console.log(prev));
+    };
+
+
+
+    return (
+        <>
+            <section className="todo-container">
+                <header>
+                    <h1>Todo List</h1>
+                </header>
+
+                <div className="input-wrapper">
+                    <form onSubmit={handleFormSubmit}>
+                        <div>
+                            <input type="text " className="todo-input" autoComplete="off" value={inputValue} onChange={(event) => handleInputChange(event.target.value)} />
+                            <label htmlFor="task">Enter Tasks </label>
+                            <button type="submit" className="todo-btn">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </>
+    )
+}
+
