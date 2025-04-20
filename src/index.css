@@ -35,8 +35,7 @@ a:hover {
   color: #535bf2;
 }
 
-body,
-ul {
+body {
   margin: 0;
   list-style: none;
   color: #888;
@@ -50,7 +49,7 @@ h1 {
   color: #888;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -61,7 +60,7 @@ button {
   background-color: #000000;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+} */
 
 button:hover {
   border-color: #646cff;
