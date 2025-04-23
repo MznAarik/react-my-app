@@ -83,7 +83,7 @@ label {
 
 #btn {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: baseline;
 }
 
@@ -92,13 +92,24 @@ label {
     margin-top: 5px;
 }
 
+.clear-btn button {
+    display: flex;
+    justify-self: center;
+    height: 35px;
+    align-items: center;
+    font-weight: 500;
+}
+
 button {
     border-radius: 7px;
-    transition: all 0.2s ease-in;
+    transition: all 0.12s ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
     color: #646cff;
+    transform: scale(1.05);
+
 }
 
 li {
