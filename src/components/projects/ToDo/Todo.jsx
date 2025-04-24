@@ -3,11 +3,16 @@ import "./Todo.css";
 import { TodoForm } from "./TodoForm";
 import { TodoList } from "./TodoList";
 import { TodoDate } from "./TodoDate";
+import { getLocalStorageTodoData, setLocalStorageTodoData } from "./TodoLocalStorage";
 
 
 export const ToDo = () => {
 
-    const [task, setTask] = useState([]);
+    const [task, setTask] = useState(() => getLocalStorageTodoData());
+
+    //add data to localStorage via component
+    setLocalStorageTodoData(task);
+
     const handleFormSubmit = (inputValue) => {
         const { id, content, checked } = inputValue;
 

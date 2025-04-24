@@ -2,8 +2,8 @@ import React from "react";
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { State } from "./components/hooks/State";
-import { DerivedState } from "./components/DerivedState";
-import { LiftStateUp } from "./components/LiftStateUp";
+import { DerivedState } from "./components/LearnReact/DerivedState";
+import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
 import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
 
