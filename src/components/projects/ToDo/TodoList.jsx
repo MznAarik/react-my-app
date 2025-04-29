@@ -12,10 +12,10 @@ export const TodoList = ({ data, checked, onHandleCheckedTodo, onHandleDeleteTod
                 </li>
                 <div className="btn">
                     <button className="check-btn" onClick={() => onHandleCheckedTodo(data)} >
-                        <SiGoogletasks />
+                        <SiGoogletasks className="img" />
                     </button>
                     <button className="delete-btn" onClick={() => onHandleDeleteTodo(data)}>
-                        <RiDeleteBin6Fill />
+                        <RiDeleteBin6Fill className="img" />
                     </button>
                 </div>
             </div >

@@ -90,20 +90,41 @@ header h3 {
     align-items: baseline;
 }
 
+.btn {
+    display: flex;
+    margin: 3px;
+    gap: 6px;
+}
+
+.img {
+    font-size: 18px;
+}
+
 .check-btn {
-    margin-right: 5px;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.delete-btn {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
 }
 
 .clear-btn button {
     display: flex;
     justify-self: center;
-    height: 35px;
     align-items: center;
+    height: 40px;
     font-weight: 500;
 }
 
 button {
+    font-weight: 700;
+    padding: 7px 7px;
     border-radius: 7px;
     transition: all 0.12s ease-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

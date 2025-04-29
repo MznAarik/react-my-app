@@ -13,22 +13,22 @@ import { ToDo } from "./components/projects/ToDo/Todo";
 // import { EventPropagation } from "./components/EventPropagation";
 
 export default function App() {
-  return <MantineProvider>{
-    <section className="container">
-      {/* <NetflixSeries /> */}
-      {/* <EventHandling /> */}
-      {/* <EventProps /> */}
-      {/* <EventPropagation /> */}
-      {/* <State />
+  return (
+    <MantineProvider>
+      <section className="container">
+        {/* <NetflixSeries /> */}
+        {/* <EventHandling /> */}
+        {/* <EventProps /> */}
+        {/* <EventPropagation /> */}
+        {/* <State />
       <Sibling /> */}
-      {/* <DerivedState /> */}
-      {/* <LiftStateUp /> */}
-      {/* <ToggleSwitch /> */}
-      <ToDo />
-
-    </section>
-  }
-  </MantineProvider>;
+        {/* <DerivedState /> */}
+        {/* <LiftStateUp /> */}
+        {/* <ToggleSwitch /> */}
+        <ToDo />
+      </section>
+    </MantineProvider>
+  )
 }
 
 
