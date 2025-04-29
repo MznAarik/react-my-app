@@ -1,46 +1,60 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Todo.css";
-import { SiGoogletasks } from "react-icons/si";
-import { RiDeleteBin6Fill } from "react-icons/ri";
-
+import { TodoForm } from "./TodoForm";
+import { TodoList } from "./TodoList";
+import { TodoDate } from "./TodoDate";
+import { getLocalStorageTodoData, setLocalStorageTodoData } from "./TodoLocalStorage";
 
 
 export const ToDo = () => {
-    const [inputValue, setInputValue] = useState("");
-    const [task, setTask] = useState([]);
-    const [dateTime, setDateTime] = useState("");
 
-    const handleInputChange = (value) => {
-        setInputValue(value);
-    }
+    const [task, setTask] = useState(() => getLocalStorageTodoData());
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
+    //add data to localStorage via component
+    setLocalStorageTodoData(task);
 
-        if (!inputValue) return;
+    const handleFormSubmit = (inputValue) => {
+        const { id, content, checked } = inputValue;
 
-        if (task.includes(inputValue)) return;
+        // to check if input field is empty or not
+        // if (!inputValue) return;
 
-        setTask((prevTask) => [...prevTask, inputValue]);
+        // if(task.includes(inputValue)) return;
 
-        setInputValue("");
+        if (!content) return;
+        //to check if the data is already existing or not 
+        const ifTodoContentMatched = task.find((curTask) => curTask.content == content);
+
+        if (ifTodoContentMatched) return;
+
+        // setTask((prevTask) => [...prevTask, { id: id, content: content, checked: checked }]);
+        // or you can write as below as per ES6
+        setTask((prevTask) => [...prevTask, { id, content, checked }]);
+
     };
 
-    // Date and Time
+    //handle ToDo deletion
+    const handleTodoDelete = (value) => {
+        const updatedTask = task.filter((curTask) => curTask.content !== value);
+        setTask(updatedTask);
+    };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const now = new Date();
-            const formattedDate = now.toLocaleDateString();
-            const formattedTime = now.toLocaleTimeString();
+    //handle clearAll button
+    const handleClearAll = () => {
+        setTask([]);
+    }
 
-            setDateTime(`${formattedDate} - ${formattedTime}`)
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-
+    // todo handleCheckedTodo functionality
+    const handleCheckedTodo = (content) => {
+        const updatedTask = task.map((curTask) => {
+            if (curTask.content === content) {
+                return { ...curTask, checked: !curTask.checked };
+            } else {
+                return curTask;
+            }
+        })
+        setTask(updatedTask);
+    }
 
     return (
         <>
@@ -48,40 +62,31 @@ export const ToDo = () => {
                 <div className="main">
                     <header>
                         <h2>Todo List</h2>
-                        <h3>{dateTime}</h3>
+                        <TodoDate />
                     </header>
 
-                    <div className="input-wrapper">
-                        <form onSubmit={handleFormSubmit}>
-                            <div>
-                                <input type="text " className="todo-input" autoComplete="off" value={inputValue} onChange={(event) => handleInputChange(event.target.value)} />
-                                <label htmlFor="task">Enter Tasks </label>
-                                <button type="submit" className="todo-btn">Add Task</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                    <TodoForm onAddTodo={handleFormSubmit} />
 
-                <div className="btn-container">
-                    <ul>
-                        {task.map((curTask, index) => {
-                            return (
-                                <>
-                                    <div id="btn">
-                                        <li key={index}>{curTask}</li>
-                                        <div className="btn">
-                                            <button className="check-btn">
-                                                <SiGoogletasks />
-                                            </button>
-                                            <button className="delete-btn ">
-                                                <RiDeleteBin6Fill />
-                                            </button>
-                                        </div>
-                                    </div >
-                                </>
-                            )
-                        })}
-                    </ul>
+                    <div className="btn-container">
+                        <ul>
+                            {task.map((curTask) => {
+                                return (
+                                    <TodoList
+                                        key={curTask.id}
+                                        data={curTask.content}
+                                        checked={curTask.checked}
+                                        onHandleCheckedTodo={handleCheckedTodo}
+                                        onHandleDeleteTodo={handleTodoDelete} />
+                                );
+                            })}
+                        </ul>
+                    </div>
+
+                </div >
+
+
+                <div className="clear-btn" >
+                    <button onClick={handleClearAll}> Clear All</button>
                 </div>
             </section >
         </>

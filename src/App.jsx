@@ -2,8 +2,8 @@ import React from "react";
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { State } from "./components/hooks/State";
-import { DerivedState } from "./components/DerivedState";
-import { LiftStateUp } from "./components/LiftStateUp";
+import { DerivedState } from "./components/LearnReact/DerivedState";
+import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
 import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
 
@@ -14,22 +14,22 @@ import { ToDo } from "./components/projects/ToDo/Todo";
 
 
 export default function App() {
-  return <MantineProvider>{
-    <section className="container">
-      {/* <NetflixSeries /> */}
-      {/* <EventHandling /> */}
-      {/* <EventProps /> */}
-      {/* <EventPropagation /> */}
-      {/* <State />
+  return (
+    <MantineProvider>
+      <section className="container">
+        {/* <NetflixSeries /> */}
+        {/* <EventHandling /> */}
+        {/* <EventProps /> */}
+        {/* <EventPropagation /> */}
+        {/* <State />
       <Sibling /> */}
-      {/* <DerivedState /> */}
-      {/* <LiftStateUp /> */}
-      {/* <ToggleSwitch /> */}
-      <ToDo />
-
-    </section>
-  }
-  </MantineProvider>;
+        {/* <DerivedState /> */}
+        {/* <LiftStateUp /> */}
+        {/* <ToggleSwitch /> */}
+        <ToDo />
+      </section>
+    </MantineProvider>
+  )
 }
 
 
