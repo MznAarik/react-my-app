@@ -1,4 +1,4 @@
-import seriesData from '../api/seriesData.json';
+import seriesData from '../../api/seriesData.json';
 import { SeriesCard } from '../components/SeriesCard.jsx'
 // import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 
