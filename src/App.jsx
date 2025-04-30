@@ -1,17 +1,21 @@
 import React from "react";
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-import { State } from "./components/hooks/State";
-import { DerivedState } from "./components/LearnReact/DerivedState";
-import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
-import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
-import { ToDo } from "./components/projects/ToDo/Todo";
-import CounterChallenge from "./components/hooks/useState/Challenge";
+// import { State } from "./components/hooks/State";
+// import { DerivedState } from "./components/LearnReact/DerivedState";
+// import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
+
 
 // import NetflixSeries, { Footer, Header } from "./components/NetflixSeries";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
+
+// import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
+import { ToDo } from "./components/projects/ToDo/Todo";
+import CounterChallenge from "./components/hooks/useState/Challenge";
+import { Controlled } from "./components/hooks/useState/Controlled";
+
 
 
 export default function App() {
@@ -23,12 +27,13 @@ export default function App() {
         {/* <EventProps /> */}
         {/* <EventPropagation /> */}
         {/* <State />
-      <Sibling /> */}
+            <Sibling /> */}
         {/* <DerivedState /> */}
         {/* <LiftStateUp /> */}
         {/* <ToggleSwitch /> */}
         {/* <ToDo /> */}
-        <CounterChallenge />
+        {/* <CounterChallenge /> */}
+        <Controlled />
       </section>
     </MantineProvider>
   )
@@ -36,11 +41,11 @@ export default function App() {
 
 
 
-export function Sibling() {
-  console.log("Sibling Component rendered");
-  return (
-    <div className="main-div">
-      <h2>Sibling Component</h2>
-    </div>
-  )
-}
+// export function Sibling() {
+//   console.log("Sibling Component rendered");
+//   return (
+//     <div className="main-div">
+//       <h2>Sibling Component</h2>
+//     </div>
+//   )
+// }
