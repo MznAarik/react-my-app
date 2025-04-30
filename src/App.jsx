@@ -11,7 +11,7 @@ import { MantineProvider } from '@mantine/core';
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
 
-// import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
+import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
 import CounterChallenge from "./components/hooks/useState/Challenge";
 import { Controlled } from "./components/hooks/useState/Controlled";
@@ -21,7 +21,7 @@ import { Controlled } from "./components/hooks/useState/Controlled";
 export default function App() {
   return (
     <MantineProvider>
-      <section className="container">
+      <>
         {/* <NetflixSeries /> */}
         {/* <EventHandling /> */}
         {/* <EventProps /> */}
@@ -31,10 +31,11 @@ export default function App() {
         {/* <DerivedState /> */}
         {/* <LiftStateUp /> */}
         {/* <ToggleSwitch /> */}
-        {/* <ToDo /> */}
+        <ToDo />
         {/* <CounterChallenge /> */}
-        <Controlled />
-      </section>
+        {/* <Controlled /> */}
+
+      </>
     </MantineProvider>
   )
 }

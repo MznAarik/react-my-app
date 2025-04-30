@@ -19,11 +19,11 @@ export const Controlled = () => {
     }
 
     return (
-        <section className="container ">
+        <section className="container">
             <h2>Controlled Components</h2>
             <form onSubmit={handleSubmit}>
                 <div className="controlled">
-                    <label className='label-control'>
+                    <label>
                         Name:
                         <input id="inputName" name="name" type="text" value={name} onChange={handleChange} />
                     </label>
