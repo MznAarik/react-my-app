@@ -6,6 +6,7 @@ import { DerivedState } from "./components/LearnReact/DerivedState";
 import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
 import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
+import CounterChallenge from "./components/hooks/useState/Challenge";
 
 // import NetflixSeries, { Footer, Header } from "./components/NetflixSeries";
 // import { EventHandling } from "./components/EventHandling";
@@ -26,7 +27,8 @@ export default function App() {
         {/* <DerivedState /> */}
         {/* <LiftStateUp /> */}
         {/* <ToggleSwitch /> */}
-        <ToDo />
+        {/* <ToDo /> */}
+        <CounterChallenge />
       </section>
     </MantineProvider>
   )

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../projects/ToDo/Todo.css"
 
 // const [count, setCount] = useState(0);
 
@@ -19,11 +20,13 @@ export const State = () => {
 
     return (
         <>
-            <section className="main-div">
-                <h1>{count}</h1>
-                <button onClick={handleBUttonClick}>Increment</button>
+            <section className="todo-container">
+                <div className="state-container">
+                    <h1>{count}</h1>
+                    <button onClick={handleBUttonClick}>Increment</button>
+                </div>
+                <ChildComponent count={count} className="child" />
             </section>
-            <ChildComponent count={count} />
         </>
     );
 
@@ -33,7 +36,7 @@ function ChildComponent({ count }) {
     console.log("Child Component Rerendered ");
     return (
         <div className="child-div">
-            <h2>Child Component {count}</h2>
+            <h2 align="center">Child Component {count}</h2>
         </div>
     )
 }
