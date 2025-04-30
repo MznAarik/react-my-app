@@ -20,7 +20,7 @@ h2 {
     margin-bottom: -10px;
 }
 
-header h3 {
+h3 {
     text-align: center;
 }
 
@@ -92,8 +92,6 @@ input {
 button {
     font-weight: 700;
     padding: 7px 7px;
-    margin: 0 5px;
-    margin-top: 20px;
     border-radius: 7px;
     transition: all 0.1s ease-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
