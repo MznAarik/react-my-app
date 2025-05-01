@@ -17,6 +17,7 @@ import CounterChallenge from "./components/hooks/useState/Challenge";
 import { Controlled } from "./components/hooks/useState/Controlled";
 import RegistrationForm from "./components/hooks/useState/RegistrationForm";
 import RegistrationReact from "./components/hooks/useState/RegistrationReact";
+import LoginForm from "./components/hooks/useState/LoginForm";
 
 
 
@@ -36,7 +37,8 @@ export default function App() {
         {/* <ToDo /> */}
         {/* <CounterChallenge /> */}
         {/* <Controlled /> */}
-        <RegistrationReact />
+        {/* <RegistrationReact /> */}
+        <LoginForm />
       </>
     </MantineProvider>
   )
