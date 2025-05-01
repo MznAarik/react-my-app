@@ -15,6 +15,9 @@ import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
 import CounterChallenge from "./components/hooks/useState/Challenge";
 import { Controlled } from "./components/hooks/useState/Controlled";
+import RegistrationForm from "./components/hooks/useState/RegistrationForm";
+import RegistrationReact from "./components/hooks/useState/RegistrationReact";
+import LoginForm from "./components/hooks/useState/LoginForm";
 
 
 
@@ -31,10 +34,11 @@ export default function App() {
         {/* <DerivedState /> */}
         {/* <LiftStateUp /> */}
         {/* <ToggleSwitch /> */}
-        <ToDo />
+        {/* <ToDo /> */}
         {/* <CounterChallenge /> */}
         {/* <Controlled /> */}
-
+        {/* <RegistrationReact /> */}
+        <LoginForm />
       </>
     </MantineProvider>
   )

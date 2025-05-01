@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 h2 {
@@ -124,4 +125,22 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.reg-form input,
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.reg-form p,
+button {
+    margin: 10px;
+}
+
+.login-card button,
+h2 {
+    margin: 20px;
 }
