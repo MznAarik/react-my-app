@@ -28,20 +28,6 @@ h3 {
     margin-right: 90px;
 }
 
-label {
-    font-weight: 700;
-    font-size: large;
-}
-
-input {
-    border-radius: 6px;
-    border: 2px solid black;
-    font-weight: 600;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-
-}
 
 .step-input {
     width: 5%;

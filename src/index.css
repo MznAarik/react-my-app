@@ -25,6 +25,13 @@
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -38,7 +45,6 @@ a:hover {
 body {
   margin: 0;
   list-style: none;
-  color: #888;
   background-color: #242424;
 
 }
@@ -70,6 +76,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+label {
+  font-weight: 700;
+  font-size: large;
+}
+
+input {
+  border-radius: 6px;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  padding: 4px 0;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -99,11 +121,4 @@ button:focus-visible {
   text-align: center;
   /* padding: 20px 15px; */
   grid-template-columns: repeat(3, 1fr);
-}
-
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
