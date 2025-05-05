@@ -37,7 +37,7 @@ export default function App() {
         {/* <DerivedState /> */}
         {/* <LiftStateUp /> */}
         {/* <ToggleSwitch /> */}
-        <ToDo />
+        {/* <ToDo /> */}
         {/* <CounterChallenge /> */}
         {/* <Controlled /> */}
         {/* <RegistrationReact /> */}
