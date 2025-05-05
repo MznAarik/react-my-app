@@ -44,13 +44,25 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   /* line-height: 1.1; */
   color: #888;
 }
 
+
+button {
+  font-weight: 600;
+  padding: 7px 7px;
+  border-radius: 7px;
+  transition: all 0.1s ease-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 button:hover {
+  transform: scale(1.03);
+  color: #646cff;
   border-color: #646cff;
+  font-weight: 700;
 }
 
 button:focus,
@@ -75,7 +87,6 @@ button:focus-visible {
 
 .grid {
   display: grid;
-  gap: 20px;
   border: 2px solid white;
   border-radius: 15px;
 }
@@ -88,4 +99,11 @@ button:focus-visible {
   text-align: center;
   /* padding: 20px 15px; */
   grid-template-columns: repeat(3, 1fr);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

@@ -18,6 +18,8 @@ import { Controlled } from "./components/hooks/useState/Controlled";
 import RegistrationForm from "./components/hooks/useState/RegistrationForm";
 import RegistrationReact from "./components/hooks/useState/RegistrationReact";
 import LoginForm from "./components/hooks/useState/LoginForm";
+import ContactForm from "./components/hooks/useState/ContactForm";
+import ReactUseEffect from "./components/hooks/useEffect";
 
 
 
@@ -38,7 +40,9 @@ export default function App() {
         {/* <CounterChallenge /> */}
         {/* <Controlled /> */}
         {/* <RegistrationReact /> */}
-        <LoginForm />
+        {/* <LoginForm /> */}
+        {/* <ContactForm /> */}
+        <ReactUseEffect />
       </>
     </MantineProvider>
   )
