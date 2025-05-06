@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "../../projects/ToDo/Todo.css"
 
 export const Counter = () => {
     const [count, setCount] = useState(0)

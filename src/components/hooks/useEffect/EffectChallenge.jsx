@@ -13,7 +13,7 @@ export const EffectChallenge = () => {
     //useEffect state variable is only called once //
     useEffect(() => {
         const timer = setInterval(() => {
-            setInteraval((interval) => interval + 1);
+            setInteraval((prev) => prev + 1);
             console.log(interval);
         }, 1000)
         return () => clearInterval(timer);

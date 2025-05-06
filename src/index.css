@@ -1,124 +1,13 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-
-  --main-color: #777ccf;
-  --supporting-color: #ebf3fe;
-  --heading-color: #000a19;
-  --h-color: #0a043c;
-  --font-color: 54 --bg-color: #424242;
-  --white-color: #ffffff;
-  --para-color: #504e4d;
-  --btn-bg-color: #211f1f;
-  --btn-hover-bg-color: #646cff;
-  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 #root {
+  margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  list-style: none;
-  background-color: #242424;
-
-}
-
-h1 {
-  font-size: 2.5em;
-  /* line-height: 1.1; */
-  color: #888;
-}
-
-
-button {
-  font-weight: 600;
-  padding: 7px 7px;
-  border-radius: 7px;
-  transition: all 0.1s ease-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-  transform: scale(1.03);
-  color: #646cff;
-  border-color: #646cff;
-  font-weight: 700;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-label {
-  font-weight: 700;
-  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 input {
-  border-radius: 6px;
-  border: 2px solid black;
-  font-weight: 600;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  padding: 4px 0;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.grid {
-  display: grid;
-  border: 2px solid white;
-  border-radius: 15px;
-}
-
-.grid-two-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-three--cols {
-  text-align: center;
-  /* padding: 20px 15px; */
-  grid-template-columns: repeat(3, 1fr);
+  padding: 5px 10px;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./index.css"
+import "./pokemon.css"
 
 const ReactUseEffect = () => {
     const [count, setCount] = useState(0);
