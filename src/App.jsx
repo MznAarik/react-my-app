@@ -1,15 +1,6 @@
 import React from "react";
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-// import { State } from "./components/hooks/State";
-// import { DerivedState } from "./components/LearnReact/DerivedState";
-// import { LiftStateUp } from "./components/LearnReact/LiftStateUp";
-
-
-// import NetflixSeries, { Footer, Header } from "./components/NetflixSeries";
-// import { EventHandling } from "./components/EventHandling";
-// import { EventProps } from "./components/EventProps";
-// import { EventPropagation } from "./components/EventPropagation";
 
 import { ToggleSwitch } from "./components/projects/ToggleSwitch/ToggleSwitch";
 import { ToDo } from "./components/projects/ToDo/Todo";
@@ -18,6 +9,10 @@ import { Controlled } from "./components/hooks/useState/Controlled";
 import RegistrationForm from "./components/hooks/useState/RegistrationForm";
 import RegistrationReact from "./components/hooks/useState/RegistrationReact";
 import LoginForm from "./components/hooks/useState/LoginForm";
+import ContactForm from "./components/hooks/useState/ContactForm";
+import ReactUseEffect from "./components/hooks/useEffect";
+import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
+import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 
 
 
@@ -25,20 +20,17 @@ export default function App() {
   return (
     <MantineProvider>
       <>
-        {/* <NetflixSeries /> */}
-        {/* <EventHandling /> */}
-        {/* <EventProps /> */}
-        {/* <EventPropagation /> */}
-        {/* <State />
-            <Sibling /> */}
-        {/* <DerivedState /> */}
-        {/* <LiftStateUp /> */}
+
         {/* <ToggleSwitch /> */}
         {/* <ToDo /> */}
         {/* <CounterChallenge /> */}
         {/* <Controlled /> */}
         {/* <RegistrationReact /> */}
-        <LoginForm />
+        {/* <LoginForm /> */}
+        {/* <ContactForm /> */}
+        {/* <ReactUseEffect /> */}
+        {/* <EffectChallenge /> */}
+        <HowNotToFetchApi />
       </>
     </MantineProvider>
   )
