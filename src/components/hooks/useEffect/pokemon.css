@@ -12,9 +12,8 @@ body {
         -10vmin 10vmin #ffffff12,
         0 8px 32px rgba(198, 241, 216, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+    width: 90%;
+    height: auto;
     position: relative;
     cursor: pointer;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -22,20 +21,21 @@ body {
 }
 
 .container:hover {
-    backdrop-filter: blur(20px solid white);
+    backdrop-filter: blur(20px);
     transform: scale(1.01);
 }
+
 /* Hover effect with smooth morphing */
 
-.card-demo:hover {
+.container:hover .card-demo { 
     background: linear-gradient(135deg, #c6f1d8 0%, #b8ecc8 30%, #a3e2b7 70%, #8dddb0 100%);
-    border-radius: 100%;
-    transform: translateY(-2rem) scale(1.05) rotate(2deg);
+    border-radius:0 100% 0 100%;
+    transform: translateY(-1rem) scale(1.05) rotate(2deg);
     box-shadow:
-        -15vmin 15vmin #ffffff18,
-        0 20px 60px rgba(198, 241, 216, 0.4),
-        0 0 0 8px rgba(198, 241, 216, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    -10vmin 10vmin #ffffff18,
+    0 20px 60px rgba(198, 241, 216, 0.4),
+    0 0 0 8px rgba(198, 241, 216, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 /* Pseudo-element for additional visual effects */
@@ -57,7 +57,7 @@ body {
 
 .card-demo:hover::before {
     opacity: 1;
-    animation: shimmer 0.8s ease-out;
+    animation: shimmer 0.7s ease-out;
 }
 
 /* Shimmer animation */
