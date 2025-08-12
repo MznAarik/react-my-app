@@ -13,6 +13,7 @@ import ContactForm from "./components/hooks/useState/ContactForm";
 import ReactUseEffect from "./components/hooks/useEffect";
 import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
+import { HowToFetchApi } from "./components/hooks/useEffect/HowToFetchApi";
 
 
 
@@ -30,7 +31,8 @@ export default function App() {
         {/* <ContactForm /> */}
         {/* <ReactUseEffect /> */}
         {/* <EffectChallenge /> */}
-        <HowNotToFetchApi />
+        {/* <HowNotToFetchApi /> */}
+        <HowToFetchApi />
       </>
     </MantineProvider>
   )
