@@ -23,6 +23,11 @@ export const EffectChallenge = () => {
         console.log(name);
     }, [name])
 
+
+    function CustomButton({ buttonText, onClick }) {
+        return <Button variant="outline" size="md" radius="md" onClick={onClick}>{buttonText}</Button>;
+    }
+
     return (
         <div className="container">
             <h2>useEffect Challenge</h2>
@@ -31,6 +36,7 @@ export const EffectChallenge = () => {
             <Button variant="outline" color="#63687C" radius="md" value={count} onClick={() => setCount(count + 1)}>Increment</Button>
             <p> Name: <span>{name}</span></p>
             <input type="text" name={name} value={name} onChange={(e) => setName(e.target.value)} />
+            <CustomButton buttonText="Click Me" onClick={() => alert("Button Clicked")} />
         </div>
     )
 }
