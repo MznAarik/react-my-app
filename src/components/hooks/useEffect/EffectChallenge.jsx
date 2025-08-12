@@ -13,7 +13,7 @@ export const EffectChallenge = () => {
     //useEffect state variable is only called once //
     useEffect(() => {
         const timer = setInterval(() => {
-            setInteraval((interval) => interval + 1);
+            setInteraval((prev) => prev + 1);
             console.log(interval);
         }, 1000)
         return () => clearInterval(timer);
@@ -23,6 +23,11 @@ export const EffectChallenge = () => {
         console.log(name);
     }, [name])
 
+
+    function CustomButton({ buttonText, onClick }) {
+        return <Button variant="outline" size="md" radius="md" onClick={onClick}>{buttonText}</Button>;
+    }
+
     return (
         <div className="container">
             <h2>useEffect Challenge</h2>
@@ -31,6 +36,7 @@ export const EffectChallenge = () => {
             <Button variant="outline" color="#63687C" radius="md" value={count} onClick={() => setCount(count + 1)}>Increment</Button>
             <p> Name: <span>{name}</span></p>
             <input type="text" name={name} value={name} onChange={(e) => setName(e.target.value)} />
+            <CustomButton buttonText="Click Me" onClick={() => alert("Button Clicked")} />
         </div>
     )
 }

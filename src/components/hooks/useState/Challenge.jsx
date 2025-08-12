@@ -28,7 +28,7 @@ const CounterChallenge = () => {
 
             <label className="label-step" htmlFor="number" value={step} onChange={(e) => setStep(Number(e.target.value))}>
                 Step:
-                <input className="step-input" type="number" value={step} />
+                <input className="step-input" id="step-input" type="number" value={step} />
             </label>
             <div className="grid-three--cols">
                 <button onClick={handleIncrement} disabled={count >= 100}>Increment</button>

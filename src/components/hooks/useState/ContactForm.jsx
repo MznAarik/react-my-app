@@ -20,7 +20,7 @@ const ContactForm = () => {
     //     }
     // }
 
-    //otherway
+    //otherway using single useEffect
 
     const [contact, setContact] = useState({
         username: "",
