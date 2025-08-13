@@ -29,9 +29,11 @@ export const HowToFetchApi = () => {
         try {
             const res = await fetch(API);
             const data = await res.json()
-            setApiData(data)
-            setLoading(false)
-            console.log(data)
+            setTimeout(() => {
+                setApiData(data)
+                setLoading(false)
+                console.log(data)
+            }, 1000)
         } catch (error) {
             console.log(error.message)
             setError(error)
