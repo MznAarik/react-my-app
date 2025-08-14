@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { loaders } from "./loaders";
 import "./pokemon.css"
 
 export const HowToFetchApi = () => {
@@ -29,9 +30,11 @@ export const HowToFetchApi = () => {
         try {
             const res = await fetch(API);
             const data = await res.json()
-            setApiData(data)
-            setLoading(false)
-            console.log(data)
+            setTimeout(() => {
+                setApiData(data)
+                setLoading(false)
+                console.log(data)
+            }, 2000)
         } catch (error) {
             console.log(error.message)
             setError(error)
@@ -39,14 +42,12 @@ export const HowToFetchApi = () => {
         }
     }
 
-    console.log(apiData)
-
     useEffect(() => {
         fetchPokemon();
     }, []) //useEffect dependency only helps the api to call only once
 
     if (loading) {
-        return <div className="loading text-white"> <h1>Loading...</h1></div>
+        return <div className="loading text-white"> {loaders()}</div>
     }
 
     if (error) {
