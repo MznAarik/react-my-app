@@ -14,6 +14,7 @@ import ReactUseEffect from "./components/hooks/useEffect";
 import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 import { HowToFetchApi } from "./components/hooks/useEffect/HowToFetchApi";
+import { UseRef } from "./components/hooks/useRef";
 
 
 
@@ -32,7 +33,8 @@ export default function App() {
         {/* <ReactUseEffect /> */}
         {/* <EffectChallenge /> */}
         {/* <HowNotToFetchApi /> */}
-        <HowToFetchApi />
+        {/* <HowToFetchApi /> */}
+        <UseRef />
       </>
     </MantineProvider>
   )
