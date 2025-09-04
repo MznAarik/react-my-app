@@ -15,6 +15,7 @@ import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 import { HowToFetchApi } from "./components/hooks/useEffect/HowToFetchApi";
 import { UseRef } from "./components/hooks/useRef";
+import { ForwardRefs } from "./components/hooks/useRef/ForwardRefs";
 
 
 
@@ -34,7 +35,7 @@ export default function App() {
         {/* <EffectChallenge /> */}
         {/* <HowNotToFetchApi /> */}
         {/* <HowToFetchApi /> */}
-        <UseRef />
+        <ForwardRefs />
       </>
     </MantineProvider>
   )
