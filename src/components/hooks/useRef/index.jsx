@@ -7,7 +7,7 @@ export const UseRef = () => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        console.log(username.current.value, password.current.value)
+        (username.current.value, password.current.value)
     };
 
     return (
