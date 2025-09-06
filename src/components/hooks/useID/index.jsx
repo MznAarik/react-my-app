@@ -25,17 +25,17 @@ export const UseID = () => {
         <div className="container">
 
             <form onSubmit={handleFormSubmit}>
-                <div className="text-white">
+                <div>
                     <label htmlFor={id + "usernameId"}>Username:</label>
                     <input type="text" id={id + "usernameId"} name="name" value={formData.name} onChange={handleChange} />
                 </div>
 
-                <div className="text-white">
+                <div>
                     <label htmlFor={id + "emailId"}>Email:</label>
                     <input type='email' id={id + "emailId"} name="email" value={formData.email} onChange={handleChange} />
                 </div>
 
-                <div className="text-white">
+                <div>
                     <label htmlFor={id + "passwordId"}>Password:</label>
                     <input type="password" id={id + "passwordId"} name="password" value={formData.password} onChange={handleChange} />
                 </div>
