@@ -17,8 +17,10 @@ import { HowToFetchApi } from "./components/hooks/useEffect/HowToFetchApi";
 import { UseRef } from "./components/hooks/useRef";
 import { ForwardRefs } from "./components/hooks/useRef/ForwardRefs";
 import { UseID } from "./components/hooks/useId";
-
-
+import { ParentComponent } from "./components/LearnReact/PropDrilling";
+import { Home } from "./components/ContextAPI/Home"
+import { BioProvider } from "./components/ContextAPI";
+import { About } from "./components/ContextAPI/About";
 
 export default function App() {
   return (
@@ -37,7 +39,12 @@ export default function App() {
         {/* <HowNotToFetchApi /> */}
         {/* <HowToFetchApi /> */}
         {/* <ForwardRefs /> */}
-        <UseID />
+        {/* <UseID /> */}
+        {/* <ParentComponent /> */}
+        <BioProvider>
+          <Home />
+          <About />
+        </BioProvider>
       </>
     </MantineProvider>
   )
