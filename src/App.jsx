@@ -21,6 +21,7 @@ import { ParentComponent } from "./components/LearnReact/PropDrilling";
 import { Home } from "./components/ContextAPI/Home"
 import { BioProvider } from "./components/ContextAPI";
 import { About } from "./components/ContextAPI/About";
+import Services from "./components/ContextAPI/Services";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
         <BioProvider>
           <Home />
           <About />
+          <Services />
         </BioProvider>
       </>
     </MantineProvider>
