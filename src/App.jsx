@@ -22,6 +22,7 @@ import { Home } from "./components/ContextAPI/Home"
 import { BioProvider } from "./components/ContextAPI";
 import { About } from "./components/ContextAPI/About";
 import Services from "./components/ContextAPI/Services";
+import { DarkLight, ThemeProvider } from "./components/ContextAPI/DarkLight";
 
 export default function App() {
   return (
@@ -42,11 +43,14 @@ export default function App() {
         {/* <ForwardRefs /> */}
         {/* <UseID /> */}
         {/* <ParentComponent /> */}
-        <BioProvider>
+        {/* <BioProvider>
           <Home />
           <About />
           <Services />
-        </BioProvider>
+        </BioProvider> */}
+        <ThemeProvider>
+          <DarkLight />
+        </ThemeProvider>
       </>
     </MantineProvider>
   )
