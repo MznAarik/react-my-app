@@ -18,11 +18,12 @@ import { UseRef } from "./components/hooks/useRef";
 import { ForwardRefs } from "./components/hooks/useRef/ForwardRefs";
 import { UseID } from "./components/hooks/useId";
 import { ParentComponent } from "./components/LearnReact/PropDrilling";
-import { Home } from "./components/ContextAPI/Home"
-import { BioProvider } from "./components/ContextAPI";
-import { About } from "./components/ContextAPI/About";
-import Services from "./components/ContextAPI/Services";
-import { DarkLight, ThemeProvider } from "./components/ContextAPI/DarkLight";
+import { Home } from "./components/hooks/ContextAPI/Home"
+import { BioProvider } from "./components/hooks/ContextAPI";
+import { About } from "./components/hooks/ContextAPI/About";
+import Services from "./components/hooks/ContextAPI/Services";
+import { DarkLight, ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
+import { ReducerComp } from "./components/hooks/useReducer";
 
 export default function App() {
   return (
@@ -48,9 +49,10 @@ export default function App() {
           <About />
           <Services />
         </BioProvider> */}
-        <ThemeProvider>
+        {/* <ThemeProvider>
           <DarkLight />
-        </ThemeProvider>
+        </ThemeProvider> */}
+        <ReducerComp />
       </>
     </MantineProvider>
   )
