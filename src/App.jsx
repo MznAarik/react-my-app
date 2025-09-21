@@ -17,27 +17,27 @@ import { HowToFetchApi } from "./components/hooks/useEffect/HowToFetchApi";
 import { UseRef } from "./components/hooks/useRef";
 import { ForwardRefs } from "./components/hooks/useRef/ForwardRefs";
 import { UseID } from "./components/hooks/useId";
-
-
+import { ParentComponent } from "./components/LearnReact/PropDrilling";
+import { Home } from "./components/hooks/ContextAPI/Home"
+import { BioProvider } from "./components/hooks/ContextAPI";
+import { About } from "./components/hooks/ContextAPI/About";
+import Services from "./components/hooks/ContextAPI/Services";
+import { DarkLight, ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
+import { ReducerComp } from "./components/hooks/useReducer";
 
 export default function App() {
   return (
     <MantineProvider>
       <>
 
-        {/* <ToggleSwitch /> */}
-        {/* <ToDo /> */}
-        {/* <CounterChallenge /> */}
-        {/* <Controlled /> */}
-        {/* <RegistrationReact /> */}
-        {/* <LoginForm /> */}
-        {/* <ContactForm /> */}
-        {/* <ReactUseEffect /> */}
-        {/* <EffectChallenge /> */}
-        {/* <HowNotToFetchApi /> */}
-        {/* <HowToFetchApi /> */}
-        {/* <ForwardRefs /> */}
-        <UseID />
+        {/* <BioProvider>
+          <Home />
+          <About />
+          <Services />
+        </BioProvider> */}
+        <ThemeProvider>
+          <DarkLight />
+        </ThemeProvider>
       </>
     </MantineProvider>
   )
