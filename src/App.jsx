@@ -30,29 +30,14 @@ export default function App() {
     <MantineProvider>
       <>
 
-        {/* <ToggleSwitch /> */}
-        {/* <ToDo /> */}
-        {/* <CounterChallenge /> */}
-        {/* <Controlled /> */}
-        {/* <RegistrationReact /> */}
-        {/* <LoginForm /> */}
-        {/* <ContactForm /> */}
-        {/* <ReactUseEffect /> */}
-        {/* <EffectChallenge /> */}
-        {/* <HowNotToFetchApi /> */}
-        {/* <HowToFetchApi /> */}
-        {/* <ForwardRefs /> */}
-        {/* <UseID /> */}
-        {/* <ParentComponent /> */}
         {/* <BioProvider>
           <Home />
           <About />
           <Services />
         </BioProvider> */}
-        {/* <ThemeProvider>
+        <ThemeProvider>
           <DarkLight />
-        </ThemeProvider> */}
-        <ReducerComp />
+        </ThemeProvider>
       </>
     </MantineProvider>
   )

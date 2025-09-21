@@ -54,6 +54,6 @@ export const ReducerComp = () => {
                     <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
                     <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
                 </div>
-            </div>
+            </div> 
         </>)
 }
